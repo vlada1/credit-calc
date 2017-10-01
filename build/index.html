@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Test Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form class="calc-credit" action="#" method="post">
+        <div class="input-section">
+          <label for="weigth">Вес изделия</label>
+          <input type="text" name="weight" id="weight" placeholder="Укажите вес" onkeyup="validateInput()" onclick="validateInput()" onchange="validateInput()"/>
+        </div>
+                
+        <div class="input-section">
+          <label for="samp">Проба металла</label>
+          <select name="samp" id="samp">
+            <option value="">375</option>
+            <option value="">500</option>
+            <option value="" selected>585</option>
+            <option value="">750</option>
+            <option value="">875</option>
+            <option value="">958</option>
+            <option value="">999</option>
+          </select> 
+        </div>
+        
+        <div class="input-section check-box">
+          <input type="checkbox" id="check-stone" />
+          <label for="check-stone" class="checл-stone__label">Камни и вставки</label>
+          <span class="note">Окончательная оценочная стоимость залога может отличаться от указанной в расчете</span>
+        </div>
+        
+        <div class="input-section tariff-section">
+          <label for="tariff">Тарифный план</label>
+          <img class="info" src="img/info.png" alt="tooltip">
+          <div id="tooltip">
+            Подсказка по тарифному плану.
+          </div>
+          <select name="tariff" id="tariff">
+            <option value="simple">"Простой"</option>
+            <option value="free">"Свободный"</option>
+          </select>          
+        </div>
+        
+        <div class="input-section">
+          <label for="discount-status">Ваш дисконтный статус</label>
+          <select name="discount-status" id="discount-status">
+            <option value="without" selected>Без статуса</option>
+            <option value="base">Базовый</option>
+            <option value="premium">Премиум</option>
+          </select> 
+        </div>
+        
+        <div class="input-section">
+          <label for="period">Срок кредитования до продления</label>
+          <input type="text" id="period" hidden="" />
+          <div class="slider-wrapper">
+            <div id="slider-date" class="noUi-target noUi-ltr noUi-horizontal">
+            </div>
+          </div>
+        </div>
+              
+        <button id="submit-button" type="submit">Рассчитать кредит
+        </button>
+               
+      </form>
+    </div>
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>

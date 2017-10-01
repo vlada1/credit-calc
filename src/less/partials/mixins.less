@@ -1,0 +1,24 @@
+.font(@fontName; @urlName; @weight; @style: normal) {
+  font-family: '@{fontName}';
+  src: url('../fonts/@{fontName}/@{urlName}.eot');
+  src: url('../fonts/@{fontName}/@{urlName}.eot#iefix') format('embedded-opentype'),
+  url('../fonts/@{fontName}/@{urlName}.woff') format('woff'),
+    url('../fonts/@{fontName}/@{urlName}.ttf') format('truetype'),
+    url('../fonts/@{fontName}/@{urlName}.svg') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+}
+
+.clearfix() {
+	&::after {
+		content:"";
+		display: block;
+		clear: both;
+	}
+}
+
+.container() {
+	max-width: 415px;
+  height: 550px;
+	margin: 0 auto;
+}

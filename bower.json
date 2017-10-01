@@ -1,0 +1,23 @@
+{
+  "name": "Test-task",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Andrushchenko Vladislava"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "nouislider": "^10.1.0"
+  }
+}
